@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --BGCOLOR: BLACK;
+  --TEXTCOLOR: white;
+  --BUTTONCOLOR: white;
+  --BUTTONTEXT: BLACK;
+
+}
+
+[theme-color="light"] {
+  --BGCOLOR: white;
+  --TEXTCOLOR: BLACK;
+  --BUTTONCOLOR: BLACK;
+  --BUTTONTEXT: WHITE;
+}
+
+.container {
+  background-color: var(--BGCOLOR);
+  transition: all 0.5s linear;
+  width: 100vw;
+  height: 100vh;
+  margin-left: -1px;
+  margin-top: -1px;
+  color: var(--TEXTCOLOR);
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: var(--BUTTONCOLOR);
+  width: 100px;
+  color: var(--BUTTONTEXT);
+  cursor: pointer;
+}
